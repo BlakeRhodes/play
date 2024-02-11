@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-800 text-white;
+}
+
+table {
+  @apply w-full text-left rounded-lg overflow-hidden shadow-lg my-6;
+}
+
+thead {
+  @apply bg-gray-700;
+}
+
+tbody {
+  @apply bg-gray-900;
+}
+
+td, th {
+  @apply border-b border-gray-800;
+}
