@@ -1,0 +1,42 @@
+<div class="container mx-auto p-6">
+  <div class="flex flex-row">
+    <div class="mb-4 mr-4">
+      <label>Party Combat Modifier</label>
+      <input type="number" [(ngModel)]="partyCombatModifier" class="px-2 py-1 border rounded w-full text-black">
+    </div>
+    <div class="mb-4 mr-4">
+      <label>Party HP</label>
+      <input type="number" [(ngModel)]="partyHp" class="px-2 py-1 border rounded w-full text-black">
+    </div>
+    <div class="mb-4">
+      <label>Party Stamina</label>
+      <input type="number" [(ngModel)]="partyStamina" class="px-2 py-1 border rounded w-full text-black">
+    </div>
+  </div>
+  <div class="flex flex-row">
+    <div class="mb-4 mr-4">
+      <label>Enemy Impact</label>
+      <input type="number" [(ngModel)]="enemyImpact" class="px-2 py-1 border rounded w-full text-black">
+    </div>
+    <div class="mb-4 mr-4">
+      <label>Enemy HP</label>
+      <input type="number" [(ngModel)]="enemyHp" class="px-2 py-1 border rounded w-full text-black">
+    </div>
+  </div>
+  <div class="mb-4">
+    <label>Number of d6</label>
+    <input type="number" [(ngModel)]="numberOfD6" class="px-2 py-1 border rounded w-full text-black">
+  </div>
+  <div class="flex flex-row">
+    <div class="mb-4 mr-4">
+      <button (click)="rollDice()" class="px-4 py-2 bg-blue-500 text-white rounded">Roll</button>
+    </div>
+    <div class="mb-4">
+      <button (click)="reset()" class="px-4 py-2 bg-blue-500 text-white rounded">Reset</button>
+    </div>
+  </div>
+  <div>
+    <label>Output</label>
+    <textarea [(ngModel)]="outputMessage" class="px-2 py-1 border rounded w-full text-black"></textarea>
+  </div>
+</div>

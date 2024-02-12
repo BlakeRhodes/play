@@ -1,0 +1,21 @@
+<div class="container mx-auto p-6">
+  <div class="flex items-center gap-2 mb-4">
+    <label for="lootBonus" class="w-24">Loot Bonus:</label>
+    <input id="lootBonus" type="number" [(ngModel)]="lootBonus" class="px-2 py-1 border rounded w-20 text-black">
+    <button (click)="rollBonus()" class="px-4 py-2 bg-blue-500 text-white rounded">Roll</button>
+  </div>
+  <div>
+    <div class="w-24">Loot Dice: {{ lootDice }}</div>
+  </div>
+  <div class="flex items-center gap-2 mb-4">
+    <label for="lootDice" class="w-24">Loot Dice:</label>
+    <input id="lootDice" type="number" [(ngModel)]="diceRolled" class="px-2 py-1 border rounded w-20 text-black ">
+    <button (click)="rollDice()" class="px-4 py-2 bg-blue-500 text-white rounded">Roll</button>
+  </div>
+
+  <div>
+    <label for="outputMessage">Output:</label>
+    <textarea id="outputMessage" [(ngModel)]="outputMessage"
+              class="px-2 py-1 border rounded w-full text-black"></textarea>
+  </div>
+</div>
